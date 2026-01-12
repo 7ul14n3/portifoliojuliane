@@ -11,6 +11,18 @@ const CONFIG = {
     scrollThrottle: 16, // Throttle para scroll events (60fps)
 };
 
+// ===== SLIDER AUTOMÁTICO =====        
+const slidesAuto = document.getElementById("slidesAuto");
+const totalSlidesAuto = slidesAuto.children.length;
+
+let indexAuto = 0;
+
+setInterval(() => {
+    indexAuto = (indexAuto + 1) % totalSlidesAuto;
+    slidesAuto.style.transform = `translateX(${-indexAuto * 100}%)`;
+}, 4000); // troca a cada 4 segundos
+
+
 // Função para throttle de eventos
 function throttle(func, delay) {
     let timeoutId;
