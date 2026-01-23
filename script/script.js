@@ -15,12 +15,21 @@ const CONFIG = {
 const slidesAuto = document.getElementById("slidesAuto");
 const totalSlidesAuto = slidesAuto.children.length;
 
-let indexAuto = 0;
+// Verifica se há slides para exibir
+if (totalSlidesAuto > 0) {
+    let indexAuto = 0;
 
-setInterval(() => {
-    indexAuto = (indexAuto + 1) % totalSlidesAuto;
-    slidesAuto.style.transform = `translateX(${-indexAuto * 100}%)`;
-}, 4000); // troca a cada 4 segundos
+    // Ajusta o estilo do slidesAuto para garantir o efeito de transição
+    slidesAuto.style.transition = 'transform 0.5s ease-in-out';  // Adiciona uma transição suave
+
+    setInterval(() => {
+        indexAuto = (indexAuto + 1) % totalSlidesAuto;
+        slidesAuto.style.transform = `translateX(${-indexAuto * 100}%)`;
+    }, 4000); // troca a cada 4 segundos
+} else {
+    console.log("Não há slides para exibir.");
+}
+
 
 
 // Função para throttle de eventos
@@ -309,3 +318,4 @@ class PortfolioApp {
                 font-size: 0.875rem; 
                 margin-top: 0.25rem; 
                 display: block;
+
