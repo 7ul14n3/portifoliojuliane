@@ -861,27 +861,25 @@ body {
     }
 }
 
-/* ===== SLIDER AUTOMATICO ===== */         
-.slider-auto {
-    width: 100%;
-    max-width: 900px;
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
+  .carousel-section {
+    width: 100%;  /* O contêiner ocupa 100% da largura disponível */
+    overflow: hidden;  /* Esconde as imagens que saem da área visível */
+  }
 
-.slides-auto {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s ease-in-out;
-}
+  .slider-auto {
+    position: relative;  /* Necessário para o controle de posicionamento interno */
+    width: 100%;  /* O slider ocupa 100% da largura disponível */
+  }
 
-.slides-auto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  .slides-auto {
+    display: flex;  /* Exibe os slides em linha */
+    transition: transform 0.5s ease-in-out;  /* Cria uma transição suave */
+  }
+
+  .slides-auto img {
+    width: 100%;  /* Cada imagem ocupa 100% da largura do contêiner */
+    object-fit: cover;  /* Faz as imagens cobrirem o espaço sem distorcer */
+  }
+
 
 
