@@ -3,258 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juliane Conceição - DEV. JR.</title>
-    <link rel="icon" type="img/foto1.jpg" href="img/foto1.jpg">
-    <meta name="description" content="Portfólio de Juliane Conceicao.">
-    <meta property="og:title" content="Juliane Conceicao DEV">
-    <meta property="og:description" content="Portfólio profissional">
+    <title>Juliane Conceição — Desenvolvedora Full-Stack</title>
+    <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+    <meta name="description" content="Portfólio de Juliane Conceição — Desenvolvedora Full-Stack. Projetos, automação, back-end, front-end e criação de sites sob medida.">
+    <meta property="og:title" content="Juliane Conceição — Desenvolvedora Full-Stack">
+    <meta property="og:description" content="Portfólio profissional e criação de sites personalizados do zero à publicação.">
     <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="nav-container">
-            <a href="#inicio" class="nav-brand"></a>
-            <ul class="nav-menu">
+            <a href="#inicio" class="nav-brand">
+                <span class="dot"></span> Juliane Conceição
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="quem-sou.html" class="nav-link">Quem sou</a></li>
+                <li><a href="landpages.html" class="nav-link">Landpages</a></li>
+                <li><a href="automacoes.html" class="nav-link">Automações/IA</a></li>
                 <li><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-		<br>
-		<br>
-                    <span class="hero-name">JULIANE CONCEIÇÃO</span>
-                    <span class="hero-subtitle">Desenvolvedora Full-Stack em formação</span>
-                </h1>
-                
-                
-                <div class="about-section">
-                    <div class="about-text" contenteditable="true" data-placeholder="sdfdsf">
-        <p style="text-align: justify; text-indent: 2em;">
-            Graduanda em <strong>Sistemas de Informação</strong> pela UNEX(3º Sem.), com formação técnica em
-            <strong>Informatica</strong> pelo Instituto Federal Baiano(IFBAIANO,2018).
-        </p>
+    <!-- HERO -->
+    <header id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-intro reveal">
+                    <span class="eyebrow">Desenvolvedora · Bahia, BR</span>
+                    <h1 class="hero-name">
+                        Olá, sou <span class="accent">Juliane</span><br>Conceição
+                    </h1>
+                    <p class="hero-role">
+                        Desenvolvedora <strong>Full-Stack</strong> em formação — unindo
+                        técnica, design e estratégia para criar produtos digitais.
+                    </p>
 
-       <p style="text-align: justify; text-indent: 2em;">
-            Experiência nos segmentos <strong> técnico e comercial </strong>,
-            especialmente em telecomunicações, atuando em NOC, operações de rede, vendas e
-            relacionamento com clientes.
-        </p>
+                    <div class="about-card">
+                        <div class="about-text">
+                            <p>
+                                Graduanda em <strong>Sistemas de Informação</strong> pela UNEX (3º sem.),
+                                com formação técnica em <strong>Informática</strong> pelo Instituto Federal
+                                Baiano (IF Baiano, 2018).
+                            </p>
+                            <p>
+                                Experiência nos segmentos <strong>técnico e comercial</strong>, especialmente
+                                em telecomunicações — atuando em NOC, operações de rede, vendas e relacionamento
+                                com clientes, com foco em comunicação clara e solução de problemas.
+                            </p>
+                            <p>
+                                Participação ativa em projetos de <strong>criação de websites</strong>, automação
+                                e estruturação de e-commerce dropshipping (brasileiro e colombiano), além de
+                                <strong>chatbots</strong> com n8n e integração de APIs.
+                            </p>
+                            <p>
+                                Disponível para novos projetos, tecnologias e implementações. Atualmente
+                                expandindo conhecimento em <strong>Full-Stack, Banco de Dados e Gestão</strong>.
+                            </p>
+                        </div>
+                    </div>
 
-       <p style="text-align: justify; text-indent: 2em;">
-            Possuo forte vivência em atendimento ao cliente, com foco em comunicação clara, escuta ativa,
-            empatia, postura profissional e solução de problemas.
-        </p>
-
-       <p style="text-align: justify; text-indent: 2em;">
-            Estive presente ativamente em projetos de criação de website, automação e estruturação de site dropshipping brasileiro e colombiano.
-            Criação de chatboots utilizando N8N e integração com APIs para uso propio.
-        </p>
-
-       <p style="text-align: justify; text-indent: 2em;">
-            Disponivel para novos projetos e novas tecnologias e implementações, Atualmente obtendo conhecimento
-            amplo fullstack, Banco de dados e Gestão.
-        </p>
+                    <div class="socials">
+                        <a href="https://www.linkedin.com/in/julianeconceicao-si/" target="_blank" rel="noopener noreferrer" class="btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/7ul14n3" target="_blank" rel="noopener noreferrer" class="btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.5 11.5 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                            GitHub
+                        </a>
+                        <a href="https://gitlab.com/julianecdossantossi" target="_blank" rel="noopener noreferrer" class="btn" aria-label="GitLab">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.955 13.587l-1.342-4.135-2.664-8.189a.455.455 0 0 0-.867 0L16.418 9.45H7.582L4.918 1.263a.455.455 0 0 0-.867 0L1.386 9.452.044 13.587a.924.924 0 0 0 .331 1.023L12 23.054l11.625-8.444a.92.92 0 0 0 .33-1.023"/></svg>
+                            GitLab
+                        </a>
+                        <a href="https://www.instagram.com/julianeconceicaosi/" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                            Instagram
+                        </a>
                     </div>
                 </div>
 
-                
-                <div class="hero-buttons">
-                    <a href="https://www.linkedin.com/in/julianeconceicao-si/" target="_blank" rel="noopener noreferrer" class="btn btn-glass" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                        LinkedIn
-                    </a>
-                    
-                    <a href="https://github.com/7ul14n3" target="_blank" rel="noopener noreferrer" class="btn btn-glass" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    
-                    <a href="https://www.instagram.com/julianeconceicaosi/" class="btn btn-glass" aria-label="Teste Chat IA">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-
-                        </svg>
-                        Instagram
-                    </a>
-                    
-                    
+                <div class="hero-portrait reveal">
+                    <img src="img/juliane.jpg" alt="Retrato de Juliane Conceição" loading="eager">
+                    <div class="portrait-badge"><span class="ping"></span> Aberta a projetos</div>
                 </div>
             </div>
+        </div>
+    </header>
+
+    <!-- FAIXA E-MAIL -->
+    <section class="band">
+        <div class="mono-bg" aria-hidden="true">01001010 01010101 01001100 01001001 01000001 01001110 01000101 · 01001010 01010101 01001100 01001001 01000001 01001110 01000101 · 01001010 01010101 01001100 01001001</div>
+        <div class="container">
+            <p class="band-label">Vamos conversar</p>
+            <a href="mailto:julianecdossantossi@gmail.com" class="email-link">julianecdossantossi@gmail.com</a>
         </div>
     </section>
 
-    <!-- Video Section -->
-    <div id="video" class="video-section">
-        <div class="video-background">
-            <!-- Placeholder para vídeo de cascatas de código -->
-            <div class="video-placeholder">
-                <div class="code-cascade">
-                    <span>01101001	01101001 	01101001 	01101001	01101001	01101001</span>
-                     <span>01101001	01101001 	01101001 	01101001	01101001	01101001</span>
-                     <span>01101001	01101001 	01101001 	01101001	01101001	01101001</span>
-                    <span>01101001	01101001 	01101001 	01101001	01101001	01101001</span>
-                    <span>01101001	01101001 	01101001 	01101001	01101001	01101001</span>
-                </div>
-            </div>
-        </div>
-        <div class="video-overlay">
-            <div class="email-highlight">
-                
-                <a href="mailto:julianecdossantossi@gmail.com" class="email-link">julianecdossantossi@gmail.com</a>
-            </div>
-        </div>
-    </div>
-
-    
+    <!-- PROJETOS -->
     <section id="projetos" class="projects">
         <div class="container">
-            <h2 class="section-title">PROJETOS</h2>
+            <div class="section-head reveal">
+                <span class="eyebrow">Repositórios</span>
+                <h2 class="section-title">Projetos</h2>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">AUTOMACAO</h3>
-                        <p class="project-description">PACK AUTOMAÇÃO</p>
-                        <div class="project-tags">
-                            <span class="tag">PYTHON</span>
-                            <span class="tag">N8N</span>
-                            <span class="tag">I.A.</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/automation.ai" class="project-link">Ver Projetos</a>
+                <article class="project-card reveal">
+                    <span class="project-index">01</span>
+                    <h3 class="project-title">Automação</h3>
+                    <p class="project-description">Pack de automação com fluxos inteligentes.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">n8n</span>
+                        <span class="tag">IA</span>
                     </div>
-                </div>
+                    <a href="https://github.com/7ul14n3/automation.ai" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver projeto
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
 
-                
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">BACK-END</h3>
-                        <p class="project-description">PACK DESENVOLVIMENTO BACK-END</p>
-                        <div class="project-tags">
-                            <span class="tag">PYTHON/JAVA</span>
-                            <span class="tag">BD</span>
-                             <span class="tag">API's</span>
-                            <span class="tag">I.A.</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/dev-back-end" class="project-link">Ver Projetos</a>
+                <article class="project-card reveal">
+                    <span class="project-index">02</span>
+                    <h3 class="project-title">Back-End</h3>
+                    <p class="project-description">Pack de desenvolvimento back-end.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python/Java</span>
+                        <span class="tag">BD</span>
+                        <span class="tag">APIs</span>
+                        <span class="tag">IA</span>
                     </div>
-                </div>
+                    <a href="https://github.com/7ul14n3/dev-back-end" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver projeto
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
 
-                
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">FRONT-END</h3>
-                        <p class="project-description">PACK DESENVOLVIMENTO FRONT-END</p>
-                        <div class="project-tags">
-                            <span class="tag">BDC </span>
-                            <span class="tag">HTML/CSS/JAVA</span>
-                            <span class="tag">FRAMEWORKs</span>
-                            <span class="tag">I.A.</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/dev-front-end" class="project-link">Ver Projetos  </a>
+                <article class="project-card reveal">
+                    <span class="project-index">03</span>
+                    <h3 class="project-title">Front-End</h3>
+                    <p class="project-description">Pack de desenvolvimento front-end.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">Frameworks</span>
+                        <span class="tag">IA</span>
                     </div>
-                </div>
+                    <a href="https://github.com/7ul14n3/dev-front-end" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver projeto
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
 
-                
-                                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">ESTRUTURA DE DADOS</h3>
-                        <p class="project-description">PACK ESTRUTURA DE DADOS</p>
-                        <div class="project-tags">
-                            <span class="tag">JAVA</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/estrutura-dados" class="project-link">Ver Projetos  </a>
+                <article class="project-card reveal">
+                    <span class="project-index">04</span>
+                    <h3 class="project-title">Estrutura de Dados</h3>
+                    <p class="project-description">Pack de estrutura de dados.</p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
                     </div>
-                </div>
+                    <a href="https://github.com/7ul14n3/estrutura-dados" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver projeto
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
 
-
-                                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">EM DESENVOLVIMENTO</h3>
-                        <p class="project-description"></p>
-                        <div class="project-tags">
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/" class="project-link">Ver Projetos  </a>
+                <article class="project-card is-soon reveal">
+                    <span class="project-index">05</span>
+                    <h3 class="project-title">Em desenvolvimento</h3>
+                    <p class="project-description">Em breve.</p>
+                    <div class="project-tags">
+                        <span class="tag">soon</span>
                     </div>
-                </div>
+                    <a href="https://github.com/7ul14n3/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver perfil
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
 
-
-
-
-                           <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">EM DESENVOLVIMENTO</h3>
-                        <p class="project-description"></p>
-                        <div class="project-tags">
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                            <span class="tag">-</span>
-                        </div>
-                        <a href="https://github.com/7ul14n3/" class="project-link">Ver Projetos  </a>
+                <article class="project-card is-soon reveal">
+                    <span class="project-index">06</span>
+                    <h3 class="project-title">Em desenvolvimento</h3>
+                    <p class="project-description">Em breve.</p>
+                    <div class="project-tags">
+                        <span class="tag">soon</span>
                     </div>
-                </div>
-
-
-
+                    <a href="https://github.com/7ul14n3/" target="_blank" rel="noopener noreferrer" class="project-link">
+                        Ver perfil
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
             </div>
         </div>
     </section>
 
-   
-
-
-
-    <br>
-    <br>
-    <br>
-
-
-    <center>
-    <footer class="footer">
-           <p style="position: center;"> Juliane <br> 2026 </p>
-
-    </footer>
-    
-
-    <!-- Toast Notification -->
-    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-content">
-            <span class="toast-message">Mensagem enviada (demo)</span>
-            <button class="toast-close" aria-label="Fechar">&times;</button>
+    <!-- CONTATO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-wrap reveal">
+                <span class="eyebrow">Contato</span>
+                <h2 class="contact-title">Vamos construir algo <span class="accent">juntos</span>?</h2>
+                <p class="contact-sub">
+                    Criação de <strong>sites e landing pages</strong> sob medida e
+                    <strong>automações personalizadas</strong> — com ou sem inteligência artificial,
+                    de acordo com o seu nicho. Do zero à publicação. Me chame no WhatsApp e bora começar.
+                </p>
+                <div class="contact-actions">
+                    <a href="https://wa.me/5573998363964?text=Tenho%20interesse%20em%20conhecer" target="_blank" rel="noopener noreferrer" class="btn btn-wpp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.052zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:julianecdossantossi@gmail.com" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                        E-mail
+                    </a>
+                    <a href="landpages.html" class="btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        Quero um site
+                    </a>
+                    <a href="automacoes.html" class="btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8 7 17M17 7l2.8-2.8"/></svg>
+                        Quero uma automação
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">Juliane Conceição</span>
+                        <div class="footer-links">
+                <a href="#inicio">Início</a>
+                <a href="quem-sou.html">Quem sou</a>
+                <a href="landpages.html">Landpages</a>
+                <a href="automacoes.html">Automações/IA</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <span class="footer-meta">© 2026 · julianeai.dev</span>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5573998363964?text=Tenho%20interesse%20em%20conhecer" target="_blank" rel="noopener noreferrer" class="wpp-float" aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.052zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+    </a>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
