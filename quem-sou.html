@@ -15,6 +15,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Ajustes locais para a seção de Certificações (não depende de mudanças em style.css) -->
+    <style>
+        .cert-grid { align-items: stretch; }
+        .cert-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .5rem; padding: 1rem; }
+        .cert-thumb-link { display: block; }
+        .cert-thumb { width: 110px; height: 110px; max-width: 110px; object-fit: cover; border-radius: 8px; display: block; margin: 0 auto; }
+        .cert-thumb-round { border-radius: 50%; }
+        .cert-card h4 { font-size: 0.95rem; margin: 0.25rem 0; }
+        .cert-card p { font-size: 0.8rem; margin: 0; }
+        .cert-btn { margin-top: 0; padding: 0.4rem 0.9rem; font-size: 0.8rem; }
+    </style>
 </head>
 <body>
 
@@ -157,6 +169,44 @@
         </div>
     </section>
 
+    <!-- CERTIFICAÇÕES -->
+    <section class="journey" id="certificacoes">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Credenciais</span>
+                <h2 class="section-title">Certificações</h2>
+            </div>
+            <div class="journey-grid cert-grid">
+                <div class="journey-card cert-card reveal">
+                    <a href="https://certs.ibsec.com.br/?cert_hash=6b051e30b6884b88" target="_blank" rel="noopener noreferrer" class="cert-thumb-link">
+                        <img class="cert-thumb cert-thumb-round" src="https://certs.ibsec.com.br/wp-content/themes/ibsec-2022/stamp/PT-IC-DEVSECOPS-780.png" alt="Certificado DevSecOps na Era da IA — IBSEC">
+                    </a>
+                    <h4>DevSecOps na Era da IA</h4>
+                    <p>Emitido por IBSEC — Instituto Brasileiro de Cibersegurança</p>
+                    <a href="https://certs.ibsec.com.br/?cert_hash=6b051e30b6884b88" target="_blank" rel="noopener noreferrer" class="btn cert-btn">Verificar certificado</a>
+                </div>
+
+                <div class="journey-card cert-card reveal">
+                 <a href="https://www.credly.com/earner/earned/badge/34ef6b69-6d2f-4dbd-a2e8-60a455d864aa" target="_blank" rel="noopener noreferrer" class="cert-thumb-link">
+                     <img class="cert-thumb" src="https://images.credly.com/size/340x340/images/86f2702d-4c21-4d3a-af71-f581a9e62e12/blob" alt="Fortinet NSE 1 Certified in Cybersecurity">
+                 </a>
+                 <h4>Fortinet NSE 1 Certified in Cybersecurity</h4>
+                    <p>Issued by Fortinet</p>
+                    <a href="https://www.credly.com/earner/earned/badge/34ef6b69-6d2f-4dbd-a2e8-60a455d864aa" target="_blank" rel="noopener noreferrer" class="btn cert-btn">Ver na Credly</a>
+                </div>
+
+                <div class="journey-card cert-card reveal">
+                 <a href="https://www.credly.com/badges/0b0f281c-5946-4d1c-aa91-15c146969664/linked_in_profile" target="_blank" rel="noopener noreferrer" class="cert-thumb-link">
+                     <img class="cert-thumb" src="https://images.credly.com/size/340x340/images/0dc7965b-8507-4312-9c12-1add6c50fa49/blob" alt="Fortinet Cybersecurity and Cloud Fundamentals 1.0">
+                 </a>
+                 <h4>Fortinet Cybersecurity and Cloud Fundamentals 1.0</h4>
+                    <p>Issued by Fortinet</p>
+                    <a href="https://www.credly.com/badges/0b0f281c-5946-4d1c-aa91-15c146969664/linked_in_profile" target="_blank" rel="noopener noreferrer" class="btn cert-btn">Ver na Credly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="contact">
         <div class="container">
@@ -197,5 +247,6 @@
     </a>
 
     <script src="script/script.js"></script>
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
