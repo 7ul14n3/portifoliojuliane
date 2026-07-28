@@ -1480,3 +1480,511 @@ img {
     .about-hero-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
     .about-photo { order: -1; max-width: 460px; margin: 0 auto; width: 100%; }
 }
+
+
+/* =====================================================================
+   RESPONSIVIDADE REFORCADA — desktop, tablet e mobile
+   ===================================================================== */
+
+/* Evita estouro horizontal causado por imagens, textos e grids. */
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 86px;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+}
+
+body.menu-open {
+    overflow: hidden;
+    touch-action: none;
+}
+
+main,
+header,
+section,
+footer,
+.container,
+.nav-container,
+.hero-grid,
+.about-hero-grid,
+.lp-method-grid,
+.projects-grid,
+.lp-services,
+.lp-process,
+.journey-grid {
+    min-width: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span {
+    overflow-wrap: break-word;
+}
+
+/* Grids fluidos: também funcionam em celulares abaixo de 320 px. */
+.projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.lp-services {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+}
+
+.lp-process {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+}
+
+.journey-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+/* Melhora a distribuição do cabeçalho em larguras intermediárias. */
+.nav-brand {
+    min-width: 0;
+    flex-shrink: 1;
+}
+
+.nav-menu {
+    min-width: 0;
+}
+
+.nav-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+
+.nav-link,
+.btn,
+.carousel-btn,
+.carousel-dots button,
+.wpp-float {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hero-badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .9rem;
+    margin-top: var(--space-md);
+}
+
+.hero-badges a {
+    display: inline-flex;
+    border-radius: 12px;
+}
+
+.email-link {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+.footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: .6rem;
+}
+
+/* Tablet e notebooks compactos. */
+@media (max-width: 1100px) {
+    .nav-container {
+        padding-inline: 1.25rem;
+    }
+
+    .nav-menu {
+        gap: .95rem;
+    }
+
+    .nav-link {
+        font-size: .83rem;
+    }
+
+    .hero-grid,
+    .about-hero-grid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 920px) {
+    .nav {
+        background: rgba(8, 8, 10, .88);
+    }
+
+    .nav-container {
+        height: 66px;
+    }
+
+    .nav-menu {
+        inset: 66px 0 auto 0;
+        max-height: calc(100dvh - 66px);
+        padding: .75rem 1rem calc(1rem + env(safe-area-inset-bottom));
+        overscroll-behavior: contain;
+        box-shadow: 0 22px 45px rgba(0, 0, 0, .35);
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: 0;
+    }
+
+    .nav-link {
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+        font-size: .98rem;
+        padding: .7rem .25rem;
+    }
+
+    .nav-link::after {
+        bottom: 6px;
+    }
+
+    .hero,
+    .lp-hero,
+    .about-hero {
+        padding-top: 100px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .lp-hero {
+        min-height: min(820px, 100svh);
+    }
+
+    .hero-grid,
+    .about-hero-grid {
+        text-align: center;
+    }
+
+    .hero-role,
+    .about-bio p {
+        margin-inline: auto;
+    }
+
+    .hero-badges,
+    .socials,
+    .about-stats {
+        justify-content: center;
+    }
+
+    .about-card {
+        text-align: left;
+    }
+
+    .lp-method {
+        padding: clamp(1.4rem, 4vw, 2.5rem);
+    }
+
+    .footer-inner {
+        align-items: center;
+    }
+}
+
+/* Celulares. */
+@media (max-width: 640px) {
+    :root {
+        --space-md: 1.15rem;
+        --space-lg: 1.75rem;
+        --space-xl: 2.7rem;
+        --space-xxl: 4rem;
+    }
+
+    html {
+        font-size: 15.5px;
+        scroll-padding-top: 74px;
+    }
+
+    .container,
+    .nav-container {
+        padding-inline: clamp(1rem, 5vw, 1.25rem);
+    }
+
+    .nav-brand {
+        max-width: calc(100vw - 94px);
+        font-size: .96rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .hero,
+    .lp-hero,
+    .about-hero {
+        padding-top: 94px;
+    }
+
+    .hero {
+        padding-bottom: 3rem;
+    }
+
+    .lp-hero {
+        min-height: auto;
+        padding-bottom: 3.25rem;
+    }
+
+    .hero-name {
+        font-size: clamp(2.35rem, 13vw, 3.45rem);
+        line-height: 1;
+    }
+
+    .lp-title {
+        font-size: clamp(2.2rem, 12vw, 3.55rem);
+        line-height: 1.02;
+    }
+
+    .about-bio h1 {
+        font-size: clamp(2.15rem, 11vw, 3.1rem);
+    }
+
+    .hero-role,
+    .lp-sub {
+        font-size: 1rem;
+    }
+
+    .about-card,
+    .svc-card,
+    .step,
+    .journey-card {
+        padding: 1.2rem;
+    }
+
+    .lp-section-head {
+        margin-bottom: 2rem;
+    }
+
+    .lp-section-head .lp-h,
+    .section-title {
+        font-size: clamp(1.75rem, 9vw, 2.35rem);
+    }
+
+    .lp-cta-row,
+    .contact-actions,
+    .socials {
+        width: 100%;
+        gap: .7rem;
+    }
+
+    .lp-cta-row .btn,
+    .contact-actions .btn {
+        width: 100%;
+        min-height: 48px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .socials .btn {
+        flex: 1 1 calc(50% - .7rem);
+        min-width: 132px;
+        min-height: 46px;
+        padding-inline: .9rem;
+    }
+
+    .hero-badges {
+        gap: .75rem !important;
+    }
+
+    .hero-badges img {
+        width: 54px !important;
+        height: 54px !important;
+    }
+
+    .hero-portrait img {
+        width: min(260px, 78vw);
+    }
+
+    .portrait-badge {
+        left: 50%;
+        bottom: -16px;
+        transform: translateX(-50%);
+        width: max-content;
+        max-width: calc(100vw - 2rem);
+    }
+
+    .lp-chip,
+    .eyebrow {
+        letter-spacing: .16em;
+    }
+
+    .lp-marquee {
+        margin-top: 2.5rem;
+    }
+
+    .lp-marquee-track {
+        gap: 1.7rem;
+        font-size: .75rem;
+        animation-duration: 28s;
+    }
+
+    .lp-method {
+        padding: 1.25rem;
+    }
+
+    .method-list li {
+        font-size: .92rem;
+    }
+
+    .contact-wrap,
+    .lp-final-card {
+        padding: 2rem 1.1rem;
+        border-radius: var(--r-md);
+    }
+
+    .email-link {
+        font-size: clamp(1.05rem, 6.4vw, 1.55rem);
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-slide .cap {
+        padding: 3.2rem 1rem 2.55rem;
+        font-size: .74rem;
+    }
+
+    .carousel-dots {
+        bottom: 12px;
+        max-width: calc(100% - 7rem);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: .8rem;
+    }
+
+    .stat {
+        padding: .85rem;
+        border: 1px solid var(--line);
+        border-radius: var(--r-sm);
+        background: var(--surface);
+    }
+
+    .stat:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+    .stat .num {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        padding-bottom: calc(var(--space-lg) + env(safe-area-inset-bottom));
+    }
+
+    .footer-links {
+        width: 100%;
+        gap: .5rem 1rem;
+    }
+
+    .footer-links a {
+        font-size: .82rem;
+    }
+
+    .wpp-float {
+        right: max(14px, env(safe-area-inset-right));
+        bottom: max(14px, env(safe-area-inset-bottom));
+        width: 54px;
+        height: 54px;
+    }
+
+    .wpp-float::after {
+        display: none;
+    }
+}
+
+/* Celulares muito estreitos. */
+@media (max-width: 380px) {
+    .container,
+    .nav-container {
+        padding-inline: .9rem;
+    }
+
+    .nav-brand {
+        font-size: .9rem;
+    }
+
+    .hero-name,
+    .lp-title,
+    .about-bio h1 {
+        letter-spacing: -.04em;
+    }
+
+    .socials .btn {
+        flex-basis: 100%;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat:last-child:nth-child(odd) {
+        grid-column: auto;
+    }
+
+    .lp-chip {
+        max-width: 100%;
+        white-space: normal;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Telas baixas em modo paisagem. */
+@media (max-height: 560px) and (orientation: landscape) {
+    .hero,
+    .lp-hero,
+    .about-hero {
+        min-height: auto;
+        padding-top: 88px;
+    }
+
+    .nav-menu {
+        max-height: calc(100dvh - 66px);
+    }
+}
+
+/* Hover apenas em dispositivos que realmente possuem cursor. */
+@media (hover: none) {
+    .project-card:hover,
+    .svc-card:hover,
+    .step:hover,
+    .journey-card:hover,
+    .btn:hover,
+    .wpp-float:hover {
+        transform: none;
+    }
+}
